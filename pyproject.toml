@@ -1,0 +1,18 @@
+[tool.basedpyright]
+typeCheckingMode = "standard"
+
+defineConstant = { DEBUG = false }
+exclude = ["**/__pycache__", "**/node_modules", "build", "dist", "venv"]
+
+ignore = []
+include = ["."]
+
+reportMissingImports = "error"
+reportMissingTypeStubs = false
+
+enableTypeIgnoreComments = true
+
+pythonPlatform = "Linux"
+pythonVersion = "3.12"
+
+executionEnvironments = [{ root = "src/pycolumnizer" }]
